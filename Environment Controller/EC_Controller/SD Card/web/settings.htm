@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function loadValues() {
+                document.getElementById("TEMP_MAX").value = tmp_max;
+                document.getElementById("TEMP_MIN").value = tmp_min;
+                document.getElementById("HUM_MAX").value = hum_max;
+                document.getElementById("HUM_MIN").value = hum_min;
+                document.getElementById("FAN1_MAX").value = fan1_max;
+                document.getElementById("FAN1_MIN").value = fan1_min;
+                document.getElementById("FAN2_MAX").value = fan2_max;
+                document.getElementById("FAN2_MIN").value = fan2_min;
+                document.getElementById("--HYS--").value = hys;
+                document.getElementById("--LOG--").checked = log;
+                document.getElementById("NegFback").value = negFeed;              
+            }
+        </script>        
+        <title>EC Controller - Settings</title>
+    </head>
+
+    <body onload="loadValues();">
+        <form action="settings.htm" method="post">
+            <table>
+                <tr><td colspan="3"><h1>Temperature Settings</h1></td></tr>
+                <tr><td align="right">Maximum temperature :</td><td><input name="MxTMP" id="TEMP_MAX" type=text maxlength="2" size="4" value=""/></td></tr>
+                <tr><td align="right" class="style1">Mimimum temperature :</td><td class="style1"><input id="TEMP_MIN" name="MnTMP" type="text" maxlength="2" size="4" value=""/></td></tr>
+
+                <tr><td colspan="2"><h1>Humidity Settings</h1></td></tr>
+                <tr><td align="right">Max :</td><td><input id="HUM_MAX" name="HumMax" type="text" maxlength="2" size="4" value=""/></td></tr>
+                <tr><td align="right">Min :</td><td><input id="HUM_MIN" name="HumMin" type="text" maxlength="2" size="4" value=""/></td></tr>
+
+                <tr><td colspan="2"><h1>Intake Fan</h1></td></tr>
+                <tr><td align="right">Maximum Speed :</td><td><input id="FAN1_MAX" name="Fan1Max" type="text" maxlength="4" size="4" value=""/></td></tr>
+                <tr><td align="right">Mimimum Speed :</td><td><input id="FAN1_MIN" name="Fan1Min" type="text" maxlength="4" size="4" value=""/></td></tr>
+
+                <tr><td colspan="2"><h1>Exaust Fan</h1></td></tr>
+                <tr><td align="right">Maximum Speed :</td><td><input id="FAN2_MAX" name="Fan2Max" type="text" maxlength="4" size="4" value=""/></td></tr>
+                <tr><td align="right">Mimimum Speed :</td><td><input id="FAN2_MIN" name="Fan2Min" type="text" maxlength="4" size="4" value=""/></td></tr>
+
+                <tr><td colspan="2"><h1>System Settings</h1></td></tr>
+                <tr><td align="right">Negative Feedback :</td><td><input id="NegFback" name="NegFback" type="text" maxlength="2" size="4" value=""/></td></tr>
+                <tr><td align="right">Hysterisis :</td><td><input id="--HYS--" name="Hys" type="text" maxlength="1" size="4" value=""/></td></tr>
+                <tr><td align="right">Logging :</td><td><input id="--LOG--" name="Log" id="Checkbox1" type="checkbox" checked=""/></td></tr>
+                <tr><td align="right" colspan="2"><input type="submit" value="Submit Changes"/></td></tr>
+            </table>
+        </form>
+    </body>
+</html>

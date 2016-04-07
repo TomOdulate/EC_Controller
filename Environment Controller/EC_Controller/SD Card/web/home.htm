@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function loadValues() {
+                document.getElementById("TMP_NOW").innerHTML = tmp_now;
+                document.getElementById("HUM_NOW").innerHTML = hum_now;
+                document.getElementById("LIG_NOW").innerHTML = lig_now;
+            }
+        </script>        
+        <title>EC Controller - Home</title>
+    </head>
+
+    <body onload="loadValues();">
+        <center>
+            <table>
+                <tr><td align="right">Temperature:</td><td id="TMP_NOW">--[TMP_NOW]--</td><td align="right">Humidity:</td><td id="HUM_NOW">--[HUM_NOW]--</td><td align="right">Light Level:</td><td id="LIG_NOW">--[LIG_NOW]--</td></tr>
+            </table>
+        </center>
+        
+    </body>
+</html>
+

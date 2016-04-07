@@ -1,0 +1,7 @@
+logging=1
+mac1=222
+mac2=173
+mac3=190
+mac4=239
+mac5=254
+mac6=237

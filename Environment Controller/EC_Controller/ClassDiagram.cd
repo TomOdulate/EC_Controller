@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="OutputsManager" Collapsed="true">
+    <Position X="3.5" Y="1.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABEAAAgAQAAFCAAAABAAAEAIACAAgAACACAAAAgA=</HashCode>
+      <FileName>OutputsManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EC_TemperatureControl" Collapsed="true">
+    <Position X="6.75" Y="1.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACEAAAAEAAGAAAAAAAAAQCAACAAEAAAAAICA=</HashCode>
+      <FileName>EC_TemperatureControl.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EventManager" Collapsed="true">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAABAAAACAAgBAIAAAAAAAAAAAAAAAAAAAAABABAA=</HashCode>
+      <FileName>EventManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RTC_DS3231" Collapsed="true">
+    <Position X="6.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AARAABAAAAAAAAgAAAAAIEAAAQAABEAAAAAAAAAAAAA=</HashCode>
+      <FileName>RTC_DS3231.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SDLogger" Collapsed="true">
+    <Position X="3.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAABCBAAAAAAAAAAIBgAAAAMCAAAAAAAAAg=</HashCode>
+      <FileName>SDLogger.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SDWebServer" Collapsed="true">
+    <Position X="3.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABABACAAAACAAAAAMAAAAAAAAQAAAAIAAAQAAgAAAAA=</HashCode>
+      <FileName>SDWebServer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Event" Collapsed="true">
+    <Position X="3.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAIAAAAAgCAAAAAAQIAAAAAAIA=</HashCode>
+      <FileName>EventManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EC_Interface" Collapsed="true">
+    <Position X="3.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAYgCQIAQABgIQAAAAUACAgQCCQANIAAgQAAAAABAIA=</HashCode>
+      <FileName>EC_Interface.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

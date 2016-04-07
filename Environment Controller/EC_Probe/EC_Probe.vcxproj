@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B97A6829-74E1-4030-8351-E6DF6B917811}</ProjectGuid>
+    <RootNamespace>EC_Probe</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Arduino\hardware\arduino\cores\arduino;C:\Users\Odula_000\Documents\Arduino\hardware\attiny\variants\tiny14;C:\Program Files (x86)\Arduino\libraries\SoftwareSerial;C:\Program Files (x86)\Arduino\libraries\SoftwareSerial\utility;c:\program files (x86)\arduino\hardware\tools\avr\avr\include\;c:\program files (x86)\arduino\hardware\tools\avr\avr\include\avr\;c:\program files (x86)\arduino\hardware\tools\avr\avr\;c:\program files (x86)\arduino\hardware\tools\avr\lib\gcc\avr\4.3.2\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Users\Odula_000\Documents\Arduino\hardware\attiny\variants\tiny14\pins_arduino.h;C:\Program Files (x86)\Arduino\hardware\arduino\cores\arduino\arduino.h;C:\Program Files (x86)\Arduino\libraries\SoftwareSerial\SoftwareSerial.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <PreprocessorDefinitions>__AVR_ATTINY84__;ARDUINO=105;ARDUINO_MAIN;__AVR__;F_CPU=8000000L;__cplusplus;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="EC_Probe.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="EEPROM-old.hex" />
+    <None Include="Flash-old.hex" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="EC_Probe_Types.h" />
+    <ClInclude Include="SimpleModbusSlaveSoftwareSerial.h" />
+    <ClInclude Include="Visual Micro\.EC_Probe.vsarduino.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SimpleModbusSlaveSoftwareSerial.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties arduino.board.name="attiny84-8" arduino.board.desc="ATtiny84 (internal 8 MHz clock)" arduino.board.property_bag="name=ATtiny84 (internal 8 MHz clock)&#xD;&#xA;bootloader.low_fuses=0xe2&#xD;&#xA;bootloader.high_fuses=0xdf&#xD;&#xA;bootloader.extended_fuses=0xff&#xD;&#xA;upload.maximum_size=8192&#xD;&#xA;build.mcu=attiny84&#xD;&#xA;build.f_cpu=8000000L&#xD;&#xA;build.core=arduino:arduino&#xD;&#xA;build.variant=tiny14&#xD;&#xA;runtime.ide.path=C:\Program Files (x86)\Arduino&#xD;&#xA;build.system.path=C:\Users\Odula_000\Documents\Arduino\hardware\attiny\system&#xD;&#xA;software=ARDUINO&#xD;&#xA;runtime.ide.version=105&#xD;&#xA;vm.core.include=arduino.h&#xD;&#xA;vm.boardsource.path=C:\Users\Odula_000\Documents\Arduino\hardware\attiny&#xD;&#xA;vm.boardsource.name=boards.txt&#xD;&#xA;vm.platformname.name=&#xD;&#xA;compiler.path=C:\Program Files (x86)\Arduino\hardware\tools\avr\bin\&#xD;&#xA;includes= -I&quot;C:\Program Files (x86)\Arduino\hardware\arduino\cores\arduino&quot;  -I&quot;C:\Users\Odula_000\Documents\Arduino\hardware\attiny\variants\tiny14&quot;  -I&quot;C:\Program Files (x86)\Arduino\libraries\SoftwareSerial&quot;  -I&quot;C:\Users\Odula_000\Documents\Arduino\libraries\SimpleModbusSlaveSoftwareSerial&quot; &#xD;&#xA;build.path=C:\Users\Odula_000\AppData\Local\VMicro\Arduino\Builds\EC_Probe\attiny84-8&#xD;&#xA;build.project_name=EC_Probe&#xD;&#xA;build.variant.path=C:\Users\Odula_000\Documents\Arduino\hardware\attiny\variants\tiny14&#xD;&#xA;archive_file=core.a&#xD;&#xA;object_file=&quot;C:\Users\Odula_000\AppData\Local\VMicro\Arduino\Builds\EC_Probe\attiny84-8\SimpleModbusSlaveSoftwareSerial\SimpleModbusSlaveSoftwareSerial.cpp.o&quot;&#xD;&#xA;source_file=&quot;C:\Users\Odula_000\Documents\Arduino\libraries\SimpleModbusSlaveSoftwareSerial\SimpleModbusSlaveSoftwareSerial.cpp&quot;&#xD;&#xA;object_files=&quot;C:\Users\Odula_000\AppData\Local\VMicro\Arduino\Builds\EC_Probe\attiny84-8\EC_Probe.cpp.o&quot; &quot;C:\Users\Odula_000\AppData\Local\VMicro\Arduino\Builds\EC_Probe\attiny84-8\SoftwareSerial\SoftwareSerial.cpp.o&quot; &quot;C:\Users\Odula_000\AppData\Local\VMicro\Arduino\Builds\EC_Probe\attiny84-8\SimpleModbusSlaveSoftwareSerial\SimpleModbusSlaveSoftwareSerial.cpp.o&quot; &#xD;&#xA;" arduino.build.mcu="attiny84" arduino.build.f_cpu="8000000L" arduino.build.core="arduino" arduino.upload.protocol="" arduino.upload.speed="" arduino.upload.maximum_size="8192" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

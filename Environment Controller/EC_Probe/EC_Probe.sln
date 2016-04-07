@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EC_Probe", "EC_Probe.vcxproj", "{B97A6829-74E1-4030-8351-E6DF6B917811}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EC_Probe_Test_Harness", "..\EC_Probe_Test_Harness\EC_Probe_Test_Harness.vcxproj", "{21AD5272-F8B8-448B-9351-E9EBA0B4482A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EC_Probe_Humidity_Test", "..\EC_Probe_Humidity_Test\EC_Probe_Humidity_Test.vcxproj", "{A524AF73-9934-41F1-B53B-F5D9B18501CA}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://sol:8080/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = EC_Probe.vcxproj
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = ..\\EC_Probe_Test_Harness\\EC_Probe_Test_Harness.vcxproj
+		SccProjectName2 = ../EC_Probe_Test_Harness
+		SccLocalPath2 = ..\\EC_Probe_Test_Harness
+		SccProjectUniqueName3 = ..\\EC_Probe_Humidity_Test\\EC_Probe_Humidity_Test.vcxproj
+		SccProjectName3 = ../EC_Probe_Humidity_Test
+		SccLocalPath3 = ..\\EC_Probe_Humidity_Test
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B97A6829-74E1-4030-8351-E6DF6B917811}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B97A6829-74E1-4030-8351-E6DF6B917811}.Debug|Win32.Build.0 = Debug|Win32
+		{B97A6829-74E1-4030-8351-E6DF6B917811}.Release|Win32.ActiveCfg = Release|Win32
+		{B97A6829-74E1-4030-8351-E6DF6B917811}.Release|Win32.Build.0 = Release|Win32
+		{21AD5272-F8B8-448B-9351-E9EBA0B4482A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{21AD5272-F8B8-448B-9351-E9EBA0B4482A}.Debug|Win32.Build.0 = Debug|Win32
+		{21AD5272-F8B8-448B-9351-E9EBA0B4482A}.Release|Win32.ActiveCfg = Release|Win32
+		{21AD5272-F8B8-448B-9351-E9EBA0B4482A}.Release|Win32.Build.0 = Release|Win32
+		{A524AF73-9934-41F1-B53B-F5D9B18501CA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A524AF73-9934-41F1-B53B-F5D9B18501CA}.Debug|Win32.Build.0 = Debug|Win32
+		{A524AF73-9934-41F1-B53B-F5D9B18501CA}.Release|Win32.ActiveCfg = Release|Win32
+		{A524AF73-9934-41F1-B53B-F5D9B18501CA}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
